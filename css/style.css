@@ -364,8 +364,6 @@ del {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-left: 250px;
-    padding-right: 250px;
 }
 
 .t-text {
