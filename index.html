@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="icon" href="/assets/favicon.svg">
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Text on top of the nav bar -->
     <div class="top-text">Free Shipping on all orders for EID 2024</div>
 
     <!-- Navigation -->
@@ -30,6 +30,19 @@
                     <li class="search">
                         <input type="text" placeholder="Search products...">
                         <button>Search</button>
+                        <a href="#" class="user">
+                            <img src="/assets/svg/user-tick-svgrepo-com.svg" alt="User account">
+                        </a>
+
+                        <a href="#" class="cart">
+                            <img src="/assets/svg/cart-alt-1-svgrepo-com.svg" alt="Shopping cart">
+                            <div class="cart-notification">7</div>
+                        </a>
+
+                        <a href="#" class="favourite">
+                            <img src="/assets/svg/heart-svgrepo-com.svg" alt="favourite Items">
+                            <div class="favourite-notification">0</div>
+                        </a>
                     </li>
                 </div>
             </ul>
@@ -84,85 +97,166 @@
         <div class="p-container">
             <div class="product-card">
                 <div class="sale">Sale!</div>
-                <img src="images/shoe_1.jpg" alt="Pink training shoe">
-                <div class="quick-view">Quick View</div>
+                <img class="product-image" src="images/shoe_1.jpg" alt="Training shoe">
+                <a class="quick-view-button" href="#"><div class="quick-view">Quick View</div></a>
                 <div class="product-info">
                     <h4>Pink Running Shoe</h4>
                     <p><del>TK 15,999.00</del> <span class="recent-price">TK 11,999.00</span></p>
+                    <div class="stars">
+                        ★★★★☆
+                    </div>
                     <a href="#">Shop Now</a>
                 </div>
             </div>
 
             <div class="product-card">
-                <img src="images/shoe_2.jpg" alt="Pink training shoe">
-                <div class="quick-view">Quick View</div>
-                <div class="product-info">
+                <img class="product-image" src="images/shoe_2.jpg" alt="Training shoe">
+                <a class="quick-view-button" href="#"><div class="quick-view">Quick View</div></a>                <div class="product-info">
                     <h4>Blue Running Shoe</h4>
                     <p><del>TK 13,999.00</del> <span class="recent-price">TK 10,999.00</span></p>
+                    <div class="stars">
+                        ★★★☆☆
+                    </div>
                     <a href="#">Shop Now</a>
                 </div>
             </div>
 
             <div class="product-card">
                 <div class="sale">Sale!</div>
-                <img src="images/shoe_3.jpg" alt="Pink training shoe">
-                <div class="quick-view">Quick View</div>
-                <div class="product-info">
+                <img class="product-image" src="images/shoe_3.jpg" alt="Training shoe">
+                <a class="quick-view-button" href="#"><div class="quick-view">Quick View</div></a>                <div class="product-info">
                     <h4>Light Blue Sneaker</h4>
                     <p><del>TK 18,999.00</del> <span class="recent-price">TK 15,999.00</span></p>
+                    <div class="stars">
+                        ★★★★☆
+                    </div>
                     <a href="#">Shop Now</a>
                 </div>
             </div>
 
             <div class="product-card">
-                <img src="images/shoe_4.jpg" alt="Pink training shoe">
-                <div class="quick-view">Quick View</div>
-                <div class="product-info">
+                <img class="product-image" src="images/shoe_4.jpg" alt="Training shoe">
+                <a class="quick-view-button" href="#"><div class="quick-view">Quick View</div></a>                <div class="product-info">
                     <h4>Keds Blue Athletic</h4>
                     <p><del>TK 11,999.00</del> <span class="recent-price">TK 10,999.00</span></p>
+                    <div class="stars">
+                        ★★☆☆☆
+                    </div>
                     <a href="#">Shop Now</a>
                 </div>
             </div>
 
             <div class="product-card">
-                <img src="images/shoe_5.jpg" alt="Pink training shoe">
-                <div class="quick-view">Quick View</div>
+                <img class="product-image" src="images/shoe_5.jpg" alt="Training shoe">
+                <a class="quick-view-button" href="#"><div class="quick-view">Quick View</div></a>
                 <div class="product-info">
                     <h4>Blue Running Shoe</h4>
                     <p><del>TK 15,999.00</del> <span class="recent-price">TK 12,999.00</span></p>
+                    <div class="stars">
+                        ★★★☆☆
+                    </div>
                     <a href="#">Shop Now</a>
                 </div>
             </div>
 
             <div class="product-card">
                 <div class="sale">Sale!</div>
-                <img src="images/shoe_6.jpg" alt="Pink training shoe">
-                <div class="quick-view">Quick View</div>
+                <img class="product-image" src="images/shoe_6.jpg" alt="Training shoe">
+                <a class="quick-view-button" href="#"><div class="quick-view">Quick View</div></a>
                 <div class="product-info">
                     <h4>Green Running Shoe</h4>
                     <p><del>TK 16,999.00</del> <span class="recent-price">TK 13,999.00</span></p>
+                    <div class="stars">
+                        ★★★☆☆
+                    </div>
                     <a href="#">Shop Now</a>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Reviews -->
     <section class="testimonials">
-        <div class="container">
-            <h2>What Our Customers Say</h2>
-            <!-- Testimonial carousel or grid -->
+        <h2 class="t-text">What Our Customers Say</h2>
+        <div class="customer-container">
+            <div class="testimonial">
+                <div class="review-stars">
+                    ★★★★★
+                </div>
+                <p>"This product really helped me. Highly recommended!"</p>
+                <div class="author">
+                    <img src="/images/user_1.jpg" alt="Maria Anna">
+                    <p> - Maria Anna</p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="review-stars">
+                    ★★★☆☆
+                </div>
+                <p>"Excellent customer service. They were always there to help."</p>
+                <div class="author">
+                    <img src="/images/user_2.jpg" alt="Julia Keys">
+                    <p> - Julia Keys</p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="review-stars">
+                    ★★★☆☆
+                </div>
+                <p>"Fast delivery and high-quality products. I'm very satisfied."</p>
+                <div class="author">
+                    <img src="/images/user_3.jpg" alt="Luis Adrian">
+                    <p> - Luis Adrian</p>
+                </div>
+            </div>
         </div>
+        <p class="review-avg">4.8 average rating from 1814 reviews</p>
     </section>
 
     <!-- Footer -->
     <footer class="footer-border">
-        <div class="container">
-            <p>&copy;ITOSSO Shoe Store. Powered by ITOSSO Shoe Store.</p>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>CATEGORIES</h4>
+                <ul>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Students</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>HELP</h4>
+                <ul>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>GET IN TOUCH</h4>
+                <ul>
+                    <li>Any questions? ,<br>Let us know in store at 105 & 109, <br> Road -1, Block-F, Banani, Dhaka - 1213.
+                        <br> or call us on +880 1618 999 555
+                    </li>
+                </ul>
+                <div class="social-accounts">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>NEWSLETTER</h4>
+                <div class="subscribe-container">
+                <input type="email" placeholder="email@example.com" class="newsletter-input">
+                <button class="subscribe-button">SUBSCRIBE</button>
+            </div>
+            </div>
         </div>
+        <p>&copy;ITOSSO Shoe Store. Powered by ITOSSO Shoe Store.</p>
     </footer>
-
-    <script src="scripts.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
