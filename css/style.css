@@ -98,7 +98,7 @@ nav {
 .cart img{
     width: 30px;
     height: 30px;
-    margin-left: 100px;
+    margin-left: 10px;
     margin-top: 7px;
 }
 
@@ -107,6 +107,55 @@ nav {
     height: 30px;
     margin-left: 20px;
     margin-top: 7px;
+}
+
+.favourite {
+    position: relative;
+}
+
+.favourite-notification {
+    position: absolute;
+    top: 5px;
+    right: -5px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.favourite img{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 7px;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart-notification {
+    position: absolute;
+    top: 5px;
+    right: -10px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Hero */
@@ -389,7 +438,8 @@ footer {
 .center-links,
 .search,
 .cart img,
-.user img {
+.user img,
+.favourite img{
     transition: all 0.3s ease;
 }
 
@@ -416,7 +466,7 @@ footer {
         align-items: center;
         gap: 10px;
     }
-    .cart img, .user img {
+    .cart img, .user img, .favourite img{
         width: 25px;
         height: 25px;
         margin-left: 10px;
