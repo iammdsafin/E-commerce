@@ -511,6 +511,14 @@ footer {
     background-color: #54AF35;
 }
 
+.product-image {
+    transition: transform .3s ease-in-out, opacity .5s ease-in-out;
+}
+
+.zoom {
+    transform: scale(1.5);
+}
+
 .container,
 .product-card,
 .nav-links,
