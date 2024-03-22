@@ -1,0 +1,403 @@
+html,
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 1%;
+}
+
+.center-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #000000 !important;
+    text-decoration: none;
+}
+
+/* Navigation */
+.top-text {
+    position: fixed;
+    width: 100%;
+    z-index: 1030;
+    text-align: center;
+    background-color: #f8f9fa;
+    color: #212529;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    margin-top: 42px;
+    z-index: 1000;
+    font-weight: bold;
+
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+}
+
+.center-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.search input {
+    padding: 8px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    width: 200%;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.search button {
+    background-color: #F9CC16;
+    color: #FFFBE8;
+    border: none;
+    padding: 8px;
+    width: 80%;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    text-align: center;
+}
+
+.search input:focus {
+    outline: none;
+    border: 1px solid #000;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+/* Hero */
+.hero {
+    background-color: #ffffff !important;
+    color: #000000;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding: 20% 3%;
+    margin-top: 159px;
+    background-origin: content-box;
+    background-size: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0C7733;
+    color: #FFFBE8;
+    padding: 10px 10px;
+    height: 50px;
+    width: 200px;
+    text-decoration: none;
+    border: none;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.big-title {
+    font-size: 5em;
+    font-family: sans-serif;
+}
+
+.big-text {
+    font-size: 1.5em;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-upper {
+    bottom: 40%;
+    text-align: right;
+}
+
+.text-middle {
+    bottom: 20%;
+    text-align: middle;
+}
+
+/* Product Showcase */
+.products {
+    padding: 50px 0;
+    background-color: #fdfdfd;
+
+}
+
+.p-text {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.products {
+    background-color: #ffffff;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.p-container {
+    margin-top: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-card {
+    scroll-snap-align: start;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 400px;
+    height: 540px;
+    flex: 0 0 auto;
+    margin: 10px;
+    position: relative;
+}
+
+.quick-view {
+    position: absolute;
+    bottom: 35%;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    transform: translateY(0);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+.product-card:hover .quick-view {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.product-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.product-info {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.product-info h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product-info p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-info a {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.product-card {
+    margin-bottom: 20px;
+}
+
+.product-card:nth-child(3n) {
+    margin-bottom: 100px;
+}
+
+del {
+    color: #868686;
+}
+
+.recent-price {
+    color: #ff0000 !important;
+}
+
+.sale {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #F9CC16;
+    color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #000000;
+}
+
+/* Reviews */
+.Reviews {
+    background-color: #C5DD8B;
+    padding: 50px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #FFFBE8;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-border {
+    border-top: 1px solid black;
+}
+
+
+@media (max-width: 1400px) {
+    .big-title {
+        font-size: 2em;
+    }
+
+    .big-text {
+        font-size: 0.8em;
+    }
+
+    .text-upper {
+        bottom: 20%;
+    }
+
+    .text-middle {
+        bottom: 5%;
+    }
+}
+
+@media (max-width: 1756px) {
+    .product-card {
+        flex: 1 0 30%;
+    }
+}
+
+@media (max-width: 1650px) {
+    .product-card {
+        flex: 1 0 30%;
+    }
+}
+
+@media (max-width: 1550px) {
+    .product-card {
+        flex: 1 0 30%;
+    }
+}
+
+@media (max-width: 1450px) {
+    .product-card {
+        flex: 1 0 30%;
+    }
+}
+
+@media (max-width: 1350px) {
+    .product-card {
+        flex: 1 0 33%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .product-card {
+        flex: 1 0 45%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .product-card {
+        flex: 1 0 47%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .product-card {
+        flex: 1 0 60%;
+    }
+}
+
+@media (max-width: 950px) {
+    .product-card {
+        flex: 1 0 70%;
+    }
+}
+
+@media (max-width: 850px) {
+    .product-card {
+        flex: 1 0 80%;
+    }
+}
+
+@media (max-width: 750px) {
+    .product-card {
+        flex: 1 0 85%;
+    }
+}
+
+@media (max-width: 650px) {
+    .product-card {
+        flex: 1 0 90%;
+    }
+}
+
+@media (max-width: 550px) {
+    .product-card {
+        flex: 1 0 95%;
+    }
+}
+
+@media (max-width: 450px) {
+    .product-card {
+        flex: 1 0 100%;
+    }
+}
