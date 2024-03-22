@@ -1,13 +1,10 @@
-html,
-body {
+html, body {
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
 .container {
     width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-    margin-top: 1%;
+    margin: 1% auto 0;
 }
 
 .center-links {
@@ -16,7 +13,7 @@ body {
 }
 
 .nav-links li a {
-    color: #000000 !important;
+    color: #000;
     text-decoration: none;
 }
 
@@ -97,14 +94,14 @@ nav {
     left: -45px;
 }
 
-.cart img{
+.cart img {
     width: 30px;
     height: 30px;
     margin-left: 10px;
     margin-top: 7px;
 }
 
-.user img{
+.user img {
     width: 30px;
     height: 30px;
     margin-left: 20px;
@@ -132,7 +129,7 @@ nav {
     align-items: center;
 }
 
-.favourite img{
+.favourite img {
     width: 30px;
     height: 30px;
     margin-left: 20px;
@@ -234,6 +231,12 @@ nav {
     background-color: #fdfdfd;
 }
 
+.p-text {
+    margin-top: 5%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
 .p-text::before {
     content: "|";
     font-size: 45px;
@@ -242,16 +245,9 @@ nav {
     color: #ee4266;
 }
 
-.p-text {
-    margin-top: 5%;
-    text-align: left;
-    text-transform: uppercase;
-}
-
 .products {
     background-color: #ffffff;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding: 0 250px;
 }
 
 .p-container {
@@ -270,6 +266,11 @@ nav {
     flex: 0 0 auto;
     margin: 10px;
     position: relative;
+    margin-bottom: 20px;
+}
+
+.product-card:nth-child(3n) {
+    margin-bottom: 100px;
 }
 
 .quick-view {
@@ -284,11 +285,9 @@ nav {
     transform: translateY(0);
     opacity: 0;
     transition: opacity 0.5s ease;
-    opacity: 0;
 }
 
 .product-card:hover .quick-view {
-    transform: translateY(0);
     opacity: 1;
 }
 
@@ -321,20 +320,12 @@ nav {
     display: inline-block;
 }
 
-.product-card {
-    margin-bottom: 20px;
-}
-
-.product-card:nth-child(3n) {
-    margin-bottom: 100px;
-}
-
 del {
     color: #868686;
 }
 
 .recent-price {
-    color: #ff0000 !important;
+    color: #ff0000;
 }
 
 .sale {
@@ -342,7 +333,7 @@ del {
     top: -10px;
     right: -10px;
     background-color: #F9CC16;
-    color: #fff;
+    color: #000000;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -352,7 +343,6 @@ del {
     font-size: 12px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    color: #000000;
 }
 
 .stars {
@@ -385,8 +375,7 @@ del {
 
 .testimonials {
     background-color: #ffffff;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding: 0 250px;
 }
 
 .testimonial {
@@ -440,14 +429,86 @@ del {
 
 /* Footer */
 footer {
-    background-color: #FFFBE8;
-    color: #000000;
+    background-color: #222222;
+    color: #ffffff;
     text-align: center;
-    padding: 20px 0;
+    padding: 90px 0;
 }
 
-.footer-border {
-    border-top: 1px solid black;
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 150px;
+}
+
+.footer-section {
+    flex: 1;
+    padding-left: 90px;
+    color: #c7c7c7;
+}
+
+.footer-section h4 {
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section ul li {
+    list-style-type: none;
+    width: 100px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 15px;
+    white-space: nowrap;
+}
+
+.footer-section a,
+.footer-section i {
+    text-decoration: none;
+    color: #c7c7c7;
+}
+
+.footer-section .social-accounts {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-section .social-accounts a {
+    margin-right: 30px;
+}
+
+.newsletter-input {
+    display: block;
+    border: none;
+    background-color: transparent;
+    caret-color: #c7c7c7;
+    color: #c7c7c7;
+}
+
+.newsletter-input:focus {
+    outline: none;
+}
+
+.subscribe-button {
+    background-color: #0C7733;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    margin-right: 300px;
+    padding: 10px 55px;
+}
+
+.subscribe-button:hover {
+    background-color: #54AF35;
 }
 
 .container,
@@ -457,7 +518,7 @@ footer {
 .search,
 .cart img,
 .user img,
-.favourite img{
+.favourite img {
     transition: all 0.3s ease;
 }
 
@@ -465,6 +526,7 @@ footer {
     .container {
         width: 90%;
     }
+
     .product-card {
         width: 100%;
     }
@@ -474,9 +536,11 @@ footer {
     .container {
         width: 90%;
     }
+
     .product-card {
         width: 100%;
     }
+
     .nav-links,
     .center-links,
     .search {
@@ -484,7 +548,10 @@ footer {
         align-items: center;
         gap: 10px;
     }
-    .cart img, .user img, .favourite img{
+
+    .cart img,
+    .user img,
+    .favourite img {
         width: 25px;
         height: 25px;
         margin-left: 10px;
@@ -495,9 +562,11 @@ footer {
     .container {
         width: 95%;
     }
+
     .product-card {
         width: 100%;
     }
+
     .nav-links,
     .center-links,
     .search {
@@ -505,7 +574,9 @@ footer {
         align-items: center;
         gap: 5px;
     }
-    .cart img, .user img {
+
+    .cart img,
+    .user img {
         width: 20px;
         height: 20px;
         margin-left: 5px;
@@ -516,16 +587,20 @@ footer {
     .container {
         width: 100%;
     }
+
     .product-card {
         width: 100%;
     }
+
     .hero {
         padding: 10% 1%;
     }
+
     .hero h1 {
         font-size: 2rem;
         width: 150px;
     }
+
     .nav-links,
     .center-links,
     .search {
@@ -533,7 +608,9 @@ footer {
         align-items: center;
         gap: 2px;
     }
-    .cart img, .user img {
+
+    .cart img,
+    .user img {
         width: 15px;
         height: 15px;
         margin-left: 2px;
@@ -639,5 +716,59 @@ footer {
 @media (max-width: 450px) {
     .product-card {
         flex: 1 0 100%;
+    }
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 0 20%;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: flex-basis 0.5s ease, font-size 0.5s ease, margin 0.5s ease, padding 0.5s ease;
+}
+
+.footer-section button {
+    transition: all 0.5s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .footer-section {
+        flex: 1 0 50%;
+    }
+}
+
+@media (max-width: 750px) {
+    .footer-section {
+        flex: 1 0 100%;
+        font-size: 0.775em;
+    }
+}
+
+@media (max-width: 650px) {
+    .footer-section {
+        flex: 1 0 100%;
+        font-size: 0.725em;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer-section {
+        flex: 1 0 100%;
+        font-size: 0.675em;
     }
 }
