@@ -281,6 +281,12 @@ del {
     color: #000000;
 }
 
+.stars {
+    font-size: 25px;
+    color: #C5DD8B;
+    margin-bottom: 15px;
+}
+
 /* Reviews */
 .Reviews {
     background-color: #C5DD8B;
