@@ -233,9 +233,18 @@ nav {
 
 }
 
-.p-text {
+.p-text::before {
+    content: "|";
+    font-size: 45px;
+    font-weight: 400;
+    margin-right: 10px;
+    color: #ee4266;
+}
+
+  .p-text {
     margin-top: 5%;
-    text-align: center;
+    text-align: lefy;
+    text-transform: uppercase;
 }
 
 .products {
