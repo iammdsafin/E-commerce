@@ -4,28 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <meta name="description" content="Shop the latest shoe styles at Shoe Shop. Free shipping on all orders for EID 2024.">
+    <title>Shoe Shop - Home</title>
     <link rel="icon" href="/assets/favicon.svg">
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/WebPage">
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <div class="top-text">Free Shipping on all orders for EID 2024</div>
+    <div class="top-text" itemprop="headline">Free Shipping on all orders for EID 2024</div>
 
     <!-- Navigation -->
     <nav>
         <div class="container">
             <ul class="nav-links">
-                <li class="logo">ITOOSO</li>
+                <li class="logo">E-Commerce</li>
                 <div class="center-links">
                     <li><a href="#">HOME</a></li>
-                    <li><a href="#">SHOP</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#product-section">SHOP</a></li>
+                    <li><a href="#footer-section">ABOUT</a></li>
+                    <li><a href="#footer-section">CONTACT</a></li>
                 </div>
+
                 <div>
                     <li class="search">
                         <input type="text" placeholder="Search products...">
@@ -64,12 +66,14 @@
                     <p class="big-text">Discover the latest men's lifestyle and activewear from Nike.</p>
                 </div>
             </div>
+
             <div class="carousel-item hero" style="background-image: url('/images/carousel-image_3.jpg')">
                 <div class="carousel-caption d-none d-md-block text-left">
                     <h5 class="big-title">Adidas</h5>
                     <p class="big-text">Shop the latest selection of adidas Ultra Boost Shoes at Foot Locker.</p>
                 </div>
             </div>
+
             <div class="carousel-item hero" style="background-image: url('/images/carousel-image_1.jpg')">
                 <div class="carousel-caption d-none d-md-block text-middle">
                     <h5 class="big-title">UGG Australia</h5>
@@ -78,10 +82,12 @@
                 </div>
             </div>
         </div>
+
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
+
         <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
@@ -89,7 +95,7 @@
     </div>
 
     <!-- Product Showcase -->
-    <section class="products">
+    <section class="products" id="product-section">
         <h2 class="p-text">Featured Products</h2>
         <div class="p-container">
             <div class="product-card">
@@ -200,6 +206,7 @@
                     <p> - Maria Anna</p>
                 </div>
             </div>
+
             <div class="testimonial">
                 <div class="review-stars">
                     ★★★☆☆
@@ -210,6 +217,7 @@
                     <p> - Julia Keys</p>
                 </div>
             </div>
+
             <div class="testimonial">
                 <div class="review-stars">
                     ★★★☆☆
@@ -225,7 +233,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer-border">
+    <footer class="footer-border" id="footer-section">
         <div class="footer-container">
             <div class="footer-section">
                 <h4>CATEGORIES</h4>
@@ -236,6 +244,7 @@
                     <li><a href="#">Students</a></li>
                 </ul>
             </div>
+
             <div class="footer-section">
                 <h4>HELP</h4>
                 <ul>
@@ -245,6 +254,7 @@
                     <li><a href="#">FAQs</a></li>
                 </ul>
             </div>
+
             <div class="footer-section">
                 <h4>GET IN TOUCH</h4>
                 <ul>
@@ -259,6 +269,7 @@
                     <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
+
             <div class="footer-section">
                 <h4>NEWSLETTER</h4>
                 <div class="subscribe-container">
@@ -267,7 +278,7 @@
                 </div>
             </div>
         </div>
-        <p>&copy;ITOSSO Shoe Store. Powered by ITOSSO Shoe Store.</p>
+        <p>&copy;E-Commerce Shoe Store. Powered by E-Commerce Shoe Store.</p>
     </footer>
     <script src="/js/script.js"></script>
 </body>
