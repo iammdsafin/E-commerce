@@ -238,6 +238,14 @@ nav {
     margin-top: 5%;
     text-align: left;
     text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    text-shadow: none;
 }
 
 .p-text::before {
@@ -366,6 +374,14 @@ del {
     text-align: left;
     margin-bottom: 150px;
     text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    text-shadow: none;
 }
 
 .t-text::before {
