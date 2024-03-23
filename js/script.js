@@ -27,3 +27,13 @@ document.body.addEventListener('click', function(event)
         }
     }
 });
+
+var urlParams = new URLSearchParams(window.location.search);
+var imgSrc = urlParams.get('image');
+var imageElement = document.getElementById('product-image');
+imageElement.src = imgSrc;
+
+function goToProductPage(imgSrc) 
+{
+    window.location.href = "product-page.html?image=" + encodeURIComponent(imgSrc);
+}
