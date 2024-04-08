@@ -4,7 +4,7 @@ This is a responsive e-commerce website developed using HTML, CSS, and JavaScrip
 
 ## Features
 
-- Responsive design: It's s optimized for various screen sizes.
+- Responsive design: Optimized for various screen sizes.
 - Product listing: Display a list of products with images, titles, descriptions, and prices.
 - Product details: Show detailed information about each product including images, descriptions, specifications, and reviews.
 - Shopping cart: Allow users to add products to their cart, view their cart, and proceed to checkout.
