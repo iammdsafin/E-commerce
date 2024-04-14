@@ -14,9 +14,3 @@ This is a responsive e-commerce website developed using HTML, CSS, and JavaScrip
 - HTML5
 - CSS3
 - JavaScript
-
-## Installation
-
-1. Clone the repository
-2. Open the project directory in your code editor.
-3. Launch the website by opening the `index.html` file in a web browser.
